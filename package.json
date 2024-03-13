@@ -6,7 +6,7 @@
         "build": "ng build",
         "bump-version": "tsx ./scripts/bump-version.ts",
         "dev": "npm run start",
-        "deploy": "ng deploy --base-href=/dnd-tools/",
+        "deploy": "ng deploy --base-href=/ --cname=dnd-tools.bkauer.com",
         "lint": "ng lint",
         "ng": "ng",
         "prepare": "husky",
