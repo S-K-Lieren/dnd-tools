@@ -9,7 +9,7 @@
         "lint": "ng lint",
         "ng": "ng",
         "prepare": "husky",
-        "publish": "standard-version -a --no-verify && ng deploy --base-href=/ --cname=dnd-tools.bkauer.com",
+        "publish": "standard-version -a --no-verify && npm run bump-version && ng deploy --base-href=/ --cname=dnd-tools.bkauer.com",
         "postpublish": "git add --all && git commit -m \"build(release): version bump\" && git push --follow-tags",
         "start": "ng serve",
         "test": "ng test",
