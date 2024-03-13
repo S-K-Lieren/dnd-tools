@@ -6,10 +6,11 @@
         "build": "ng build",
         "bump-version": "tsx ./scripts/bump-version.ts",
         "dev": "npm run start",
+        "deploy": "ng deploy --base-href=/dnd-tools/",
         "lint": "ng lint",
         "ng": "ng",
         "prepare": "husky",
-        "publish": "standard-version -a --no-verify && ng deploy --base-href=/dnd-tools/",
+        "publish": "standard-version -a --no-verify && npm run deploy",
         "postpublish": "git add --all && git commit -m \"build(release): version bump\" && git push --follow-tags",
         "start": "ng serve",
         "test": "ng test",
@@ -17,7 +18,7 @@
     },
     "private": true,
     "repository": {
-        "url": "https://github.com/MunkiWinchester/dnd-tools",
+        "url": "https://github.com/S-K-Lieren/dnd-tools",
         "type": "git"
     },
     "dependencies": {
